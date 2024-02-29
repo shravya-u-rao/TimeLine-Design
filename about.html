@@ -15,7 +15,7 @@
       box-sizing: border-box;
     }
     body {
-      background: #2e364a;
+      background: #fff;
     }
     .timeline {
       position: relative;
@@ -24,6 +24,7 @@
     }
     .container {
       padding: 10px 50px;
+
       position: relative;
       width: 50%;
       animation: movedown 1s linear forwards;
@@ -62,6 +63,9 @@
       position: relative;
       border-radius: 6px;
       font-size: 15px;
+      /* background-color: #ec7513; */
+      color: white;
+      background-image: linear-gradient(to right, #EC7513, #F9C73E);
     }
     .left-container {
       left: 0;
@@ -91,6 +95,8 @@
       margin-left: -3px;
       z-index: -1;
       animation: moveline 6s linear forwards;
+      /* background-color: #ec7513; */
+      background-image: linear-gradient(to right, #EC7513, #F9C73E);
     }
 
     @keyframes moveline {
@@ -116,7 +122,8 @@
       z-index: 1;
       border-top: 15px solid transparent;
       border-bottom: 15px solid transparent;
-      border-left: 15px solid white;
+      border-left: 15px solid ;
+      background-image: linear-gradient(to right, #EC7513, #F9C73E);
       right: -15px;
     }
     .right-container-arrow {
@@ -127,7 +134,8 @@
       z-index: 1;
       border-top: 15px solid transparent;
       border-bottom: 15px solid transparent;
-      border-right: 15px solid white;
+      border-right: 15px solid ;
+      background-image: linear-gradient(to right, #EC7513, #F9C73E);
       left: -15px;
     }
 
@@ -156,8 +164,9 @@
       .right-container img {
         left: 10px;
       }
-      .left-container-arrow,right-container-arrow{
-        border-right:15px solid #fff ;
+      .left-container-arrow,
+      right-container-arrow {
+        border-right: 15px solid #fff;
         border-left: 0;
         left: -15px;
       }
@@ -168,13 +177,14 @@
       <div class="container left-container">
         <img src="google.png " alt="qwerty" />
         <div class="text-box">
-          <h2>Alphabet Inc</h2>
-          <small>2018-2019</small>
+          <h2>Compassionate and Experienced Team</h2>
+          <!--<small>2018-2019</small>-->
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-            deserunt non. Repellat, harum reiciendis! Perferendis velit quaerat,
-            ea totam cupiditate adipisci et sunt blanditiis sequi, in amet
-            facere voluptatem assumenda.
+            Our team of compassionate professionals, including therapists,
+            educators, and support of staff, is passionate about making a
+            positive difference in the lives of individuals with autism. With
+            years of experience and expertise, we are committed to providing the
+            highest quality care and support.
           </p>
           <span class="left-container-arrow"></span>
         </div>
@@ -183,13 +193,14 @@
       <div class="container right-container">
         <img src="amazon.png" />
         <div class="text-box">
-          <h2>Amazon Inc</h2>
-          <small>2018-2019</small>
+          <h2>Individualized Programs</h2>
+          <!--<small>2018-2019</small>-->
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-            deserunt non. Repellat, harum reiciendis! Perferendis velit quaerat,
-            ea totam cupiditate adipisci et sunt blanditiis sequi, in amet
-            facere voluptatem assumenda.
+            We believe in the power of personalized care. Each individual at
+            Oranges Care receives an individualized program tailored to their
+            unique strengths, challenges, and goals. We work closely with
+            families to develop strategies that promote growth, development, and
+            independence.
           </p>
           <span class="right-container-arrow"></span>
         </div>
@@ -198,13 +209,14 @@
       <div class="container left-container">
         <img src="tesla.png" />
         <div class="text-box">
-          <h2>Tesla Inc</h2>
-          <small>2018-2019</small>
+          <h2>Holistic Approach</h2>
+          <!--<small>2018-2019</small>-->
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-            deserunt non. Repellat, harum reiciendis! Perferendis velit quaerat,
-            ea totam cupiditate adipisci et sunt blanditiis sequi, in amet
-            facere voluptatem assumenda.
+            We take a holistic approach to autism care, focusing not only on
+            academic and behavioral development but also on social skills,
+            communication, sensory integration, and overall well-being. Our
+            comprehensive approach ensures that individuals receive the support
+            they need in all areas of their lives.
           </p>
           <span class="left-container-arrow"></span>
         </div>
@@ -213,43 +225,13 @@
       <div class="container right-container">
         <img src="toyota.png" />
         <div class="text-box">
-          <h2>Toyota Inc</h2>
-          <small>2018-2019</small>
+          <h2>State-of-the-Art Facilities</h2>
+          <!--<small>2018-2019</small>-->
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-            deserunt non. Repellat, harum reiciendis! Perferendis velit quaerat,
-            ea totam cupiditate adipisci et sunt blanditiis sequi, in amet
-            facere voluptatem assumenda.
-          </p>
-          <span class="right-container-arrow"></span>
-        </div>
-      </div>
-
-      <div class="container left-container">
-        <img src="flipkart.png" />
-        <div class="text-box">
-          <h2>Flipkart Inc</h2>
-          <small>2018-2019</small>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-            deserunt non. Repellat, harum reiciendis! Perferendis velit quaerat,
-            ea totam cupiditate adipisci et sunt blanditiis sequi, in amet
-            facere voluptatem assumenda.
-          </p>
-          <span class="left-container-arrow"></span>
-        </div>
-      </div>
-
-      <div class="container right-container">
-        <img src="youtube.png" />
-        <div class="text-box">
-          <h2>YouTube Inc</h2>
-          <small>2018-2019</small>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-            deserunt non. Repellat, harum reiciendis! Perferendis velit quaerat,
-            ea totam cupiditate adipisci et sunt blanditiis sequi, in amet
-            facere voluptatem assumenda.
+            Oranges Care is equipped with state-of-the-art facilities and
+            resources designed to create a supportive and engaging environment.
+            From sensory rooms to therapeutic equipment, we provide the tools
+            necessary for individuals to learn, grow, and thrive.
           </p>
           <span class="right-container-arrow"></span>
         </div>
