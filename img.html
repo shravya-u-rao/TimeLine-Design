@@ -5,112 +5,59 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Widget Ideas</title>
 <style>
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
+.main-frame {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  background-color: aqua;
 }
-
-.container {
-  width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.fram-right-aligned{}
+.col{
+    display: flex;
+    width: 100%;
+    align-self: flex-end;
+    background-color: black;
+    height: 300px;
+    position: relative;
+    flex-direction: column;
 }
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ddd;
+.top-in-col{
+    width: 60%;
+    height: 20%;
+    align-self: flex-end;
+    margin-top: -20px;
+    background-color: rgb(255, 127, 221);
 }
-
-.header h1 {
-  font-size: 24px;
-  margin: 0;
+.middle-in-col{
+    width: 60%;
+    height: 20%;
+    align-self: center;
+    margin-top: -10px;
+    background-color: rgb(32, 98, 222);
 }
-
-.header p {
-  font-size: 16px;
-  color: #aaa;
-  margin: 0;
+.bottom-in-col{
+    width: 60%;
+    height: 20%;
+    align-self: flex-start;
+    margin-top: -10px;
+    background-color: rgb(183, 221, 13);
 }
-
-.body {
-  padding: 20px;
-}
-
-.body h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.body p {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.stats {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.stats .stat {
-  text-align: center;
-}
-
-.stats .stat p {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.stats .stat span {
-  font-size: 14px;
-  color: #aaa;
-}
-
-.image {
-  margin: 0 auto;
-  max-width: 100%; /* Adjust as needed */
-}
+.bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
 </style>
 </head>
 <body>
-<div class="container">
-  <div class="header">
-    <h1>Widget Ideas</h1>
-    <p>For Higher Conversion Rate</p>
-  </div>
-  <div class="body">
-    <img src="your_image.jpg" alt="Widget Image" class="image">
-    <h2>Increase Conversions by 22.6%!</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. </p>
-    <div class="stats">
-      <div class="stat">
-        <p>+22.6%</p>
-        <span>Conversions</span>
-      </div>
-      <div class="stat">
-        <p>1,313</p>
-        <span>Conversions</span>
-      </div>
-    </div>
-    <h2>Additional Benefits</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. </p>
-    <div class="stats">
-      <div class="stat">
-        <p>+10.8%</p>
-        <span>Engagement</span>
+<div className="main-frame">
+    <div className="bottom">
+      <div className="col">
+        <div className="top-in-col"></div>
+        <div className="middle-in-col"></div>
+        <div className="bottom-in-col"></div>
       </div>
     </div>
   </div>
-</div>
 </body>
 </html>

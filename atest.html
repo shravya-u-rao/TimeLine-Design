@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main-frame {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        background-image: url("cf54ddfe-ff5b-4ddc-be59-b562b0ea4dc9.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+         /* or background-size: 100%; */
+      }
+
+      .col {
+        display: flex;
+        width: 100%;
+        align-self: flex-end;
+        /* background-color: black; */
+        height: 300px;
+        position: relative;
+        flex-direction: column;
+      }
+      .top-in-col {
+        width: 60%;
+        height: 20%;
+        align-self: flex-end;
+        margin-top: -20px;
+        background-image: url("cf54ddfe-ff5b-4ddc-be59-b562b0ea4dc9.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-color: rgb(255, 127, 221); */
+      }
+      .middle-in-col {
+        width: 60%;
+        height: 20%;
+        align-self: center;
+        margin-top: -10px;
+        background-image: url("cf54ddfe-ff5b-4ddc-be59-b562b0ea4dc9.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-color: rgb(32, 98, 222); */
+      }
+      .bottom-in-col {
+        width: 60%;
+        height: 20%;
+        align-self: flex-start;
+        margin-top: -10px;
+        background-image: url("cf54ddfe-ff5b-4ddc-be59-b562b0ea4dc9.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-color: rgb(183, 221, 13); */
+      }
+      .bottom {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-frame">
+      <div class="bottom">
+        <div class="col">
+          <!-- <img src="e65ebb5f-2875-49e9-8521-71561d7df342.jpg" /> -->
+          <div class="top-in-col">
+            <!-- <img src="IMG_3297.jpeg" /> -->
+          </div>
+          <div class="middle-in-col">
+            <!-- <img src="cf54ddfe-ff5b-4ddc-be59-b562b0ea4dc9.jpg" /> -->
+          </div>
+          <div class="bottom-in-col">
+            <!-- <img src="c845358d-93ba-4c26-b1f4-d972fcc0ade9 (1).jpg" /> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
