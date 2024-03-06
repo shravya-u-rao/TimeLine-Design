@@ -17,28 +17,33 @@
 
     .container {
       width: 100%;
-      max-width: 1000px; /* Limit container width */
+      /*max-width: 1000px; */
       position: relative;
       display: flex;
       justify-content: space-between;
-      flex-wrap: wrap; /* Allow cards to wrap on small screens */
-      margin: 0 10px; /* Add some margin to the sides */
+      flex-wrap: wrap; 
+      /*margin: 0 10px; */
+      height: auto;
+      
+     
     }
 
-    .container .card {
-      width: calc(33.33% - 20px); /* Adjust card width for smaller screens */
-      margin-bottom: 20px; /* Add some space between cards */
+    .container .card1 {
+      width: calc(33.33% - 20px); 
+      /*margin-bottom: 20px; */
+    
       position: relative;
       cursor: pointer;
+       height: 100%;
     }
 
-    .container .card .face {
-      width: 100%; /* Make sure the faces occupy the entire width */
+    .container .card1 .face {
+      width: 100%; 
       height: 200px;
       transition: 0.5s;
     }
 
-    .container .card .face.face1 {
+    .container .card1 .face.face1 {
       position: relative;
       background: #f57003;
       display: flex;
@@ -48,25 +53,25 @@
       transform: translateY(100px);
     }
 
-    .container .card:hover .face.face1 {
+    .container .card1:hover .face.face1 {
       background: #f57003;
       transform: translateY(0);
     }
 
-    .container .card .face.face1 .content {
-      opacity: 0.2;
+    .container .card1 .face.face1 .content {
+      /*opacity: 0.2;*/
       transition: 0.5s;
     }
 
-    .container .card:hover .face.face1 .content {
+    .container .card1:hover .face.face1 .content {
       opacity: 1;
     }
 
-    .container .card .face.face1 .content img {
+    .container .card1 .face.face1 .content img {
       max-width: 100px;
     }
 
-    .container .card .face.face1 .content h3 {
+    .container .card1 .face.face1 .content h3 {
       margin: 10px 0 0;
       padding: 0;
       color: #fff;
@@ -74,10 +79,12 @@
       font-size: 1.5em;
     }
 
-    .container .card .face.face2 {
+    .container .card1 .face.face2 {
       position: relative;
       background: #fff;
       display: flex;
+      font-size: 12px;
+      color: black;
       justify-content: center;
       align-items: center;
       padding: 20px;
@@ -86,16 +93,16 @@
       transform: translateY(-100px);
     }
 
-    .container .card:hover .face.face2 {
+    .container .card1:hover .face.face2 {
       transform: translateY(0);
     }
 
-    .container .card .face.face2 .content p {
+    .container .card1 .face.face2 .content p {
       margin: 0;
       padding: 0;
     }
 
-    .container .card .face.face2 .content a {
+    .container .card1 .face.face2 .content a {
       margin: 15px 0 0;
       display: inline-block;
       text-decoration: none;
@@ -105,67 +112,74 @@
       border: 1px solid #333;
     }
 
-    .container .card .face.face2 .content a:hover {
+    .container .card1 .face.face2 .content a:hover {
       background: #333;
       color: #fff;
     }
 
-    /* Media Query for small screens */
     @media screen and (max-width: 768px) {
-      .container .card {
-        width: calc(50% - 20px); /* Adjust card width for smaller screens */
-      }
-    }
+  .container .card1 {
+    width: calc(50% - 20px);
+    margin-top: 0; /* Remove the margin-top */
+    margin-bottom: 0; /* Remove the margin-bottom */
+  }
+}
 
-    /* Media Query for extra small screens */
-    @media screen and (max-width: 480px) {
-      .container .card {
-        width: 100%; /* Set card width to full width on extra small screens */
-      }
-    }
+@media screen and (max-width: 480px) {
+  .container .card1 {
+    width: 100%;
+    margin-top: -50px;
+    margin-bottom: -50px;
+  }
+}
+
+      
+    
   </style>
 </head>
 <body>
     <div class="container">
-        <div class="card">
+        <div class="card1">
             <div class="face face1">
                 <div class="content">
-                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
-                    <h3>Design</h3>
+
+                    <h3>Fine Motor Activities</h3>
                 </div>
             </div>
             <div class="face face2">
                 <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
-                        <a href="#">Read More</a>
+                    <p>Fine motor activities focus on the coordination and control of small muscles, particularly in the hands and fingers. These activities are essential for tasks that require precision and dexterity, such as writing, drawing, buttoning clothes, or using utensils. By engaging in fine motor activities, individuals can improve their hand-eye coordination, finger strength, and control, which are vital for daily activities and independence.
+</p>
+                        
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card1">
             <div class="face face1">
                 <div class="content">
-                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
-                    <h3>Code</h3>
+                    
+                    <h3>Gross Motor Activities</h3>
                 </div>
             </div>
             <div class="face face2">
                 <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
-                        <a href="#">Read More</a>
+                    <p>Gross motor activities involve the coordination and control of larger muscle groups, such as those in the arms, legs, and core. These activities help develop strength, balance, coordination, and overall body awareness. Engaging in gross motor activities like running, jumping, climbing, or playing sports not only promotes physical fitness but also enhances motor skills, spatial awareness, and social interaction.
+</p>
+                        
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card1">
             <div class="face face1">
                 <div class="content">
-                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true">
-                    <h3>Launch</h3>
+                    
+                    <h3>Sensory Integration Activities</h3>
                 </div>
             </div>
             <div class="face face2">
                 <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
-                        <a href="#">Read More</a>
+                    <p>Sensory integration activities focus on stimulating and integrating the senses to help individuals process and respond to sensory information effectively. These activities can include various sensory experiences, such as touch, movement, visual, auditory, and proprioceptive input. By engaging in sensory integration activities, individuals can improve sensory processing, attention, self-regulation, and overall sensory integration skills.</p>
+                        
                 </div>
             </div>
         </div>
